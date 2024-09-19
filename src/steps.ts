@@ -54,20 +54,33 @@ export const plans = [
   },
 ];
 
-export const addOnns = [
+// create a emum with the different types of add-ons
+export enum AddOnTypes {
+  online = "Online service",
+  storage = "Larger storage",
+  profile = "Customizable Profile",
+}
+
+export const addOns = [
   {
+    type: AddOnTypes.online,
     title: "Online service",
     subtitle: "Access to multiplayer games",
     price: 1,
+    state: false,
   },
   {
+    type: AddOnTypes.storage,
     title: "Larger storage",
     subtitle: "Extra 1TB of cloud save",
     price: 2,
+    state: false,
   },
   {
+    type: AddOnTypes.profile,
     title: "Customizable Profile",
     subtitle: "Custom theme on your profile",
     price: 2,
+    state: false,
   },
 ];

@@ -19,7 +19,7 @@ const AddOnsForm = () => {
           <div
             className={item.state ? "item active" : "item"}
             key={item.title}
-            onClick={() => dispatch(updateAddOns(item.title))}
+            onClick={() => dispatch(updateAddOns(item.type))}
           >
             <div className="content">
               <div className="check">
